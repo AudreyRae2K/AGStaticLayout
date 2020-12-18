@@ -1,0 +1,74 @@
+html, body {
+    margin: 0em;
+    padding: 0em;
+    border: 0em;
+    background-image: url(https://www.freepik.com/free-vector/pattern-with-black-stars-white-background_949778.htm);
+
+}
+
+
+#AGBrand {
+    width: 100vw;
+    
+    
+}
+
+#logo {
+    height: 100%;
+    
+}
+
+
+#navbar {
+    background-color: rgba(185,11,71,0.9);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#shippingStatement {
+    background-color: rgb(136, 6, 78);
+    margin: 0em;
+    height: 3em;
+
+    color: white;
+    text-align: center;
+    
+}
+
+
+.bb-shop-nav-container {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.bb-shop-nav-container {
+    position: relative;
+    z-index: 3;
+    background-color: #fff;
+
+    border-top: 1px solid #cacaca;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-color: rgb(202, 202, 202);
+        
+    border-bottom: 1px solid #cacaca;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(202, 202, 202);    
+
+}
+
+
+
+
+
+
+
+
+
