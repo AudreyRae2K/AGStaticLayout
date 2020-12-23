@@ -6,82 +6,140 @@
     <title>American Girl</title>
     <link ref="text/css" rel="stylesheet" href="AG.css">
   
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/90f4aa5c7f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div id="website">
-        <div class="AGBrand" id="AGBrand">
-            <div class="main-nav" id="navbar">
-                <button class="aghamburger"></button>
-                    <img class="main-nav" id="logo" src="./assets/American Girl Logo.jpg">
 
-                <div class="main-nav" id="Rewards/Sign"></div>
+        <div class="header" id="logoHeader">
+
+            <div class="main-nav">
+                    <div id="mySidenav" class="sidenav">
+                        <div id="home-exit">
+                        <a>
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <!-- <button class=>
+                            <i class="fas fa-times"></i>
+                        </button> -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">  &times;</a>
+                        </div>
+
+                        <hr>
+                        <a href="#">NEW</a>
+                        <a href="#">DOLLS</a>
+                        <a href="#">CREATE YOUR OWN</a>
+                        <a href="#">FURNITURE & ACCESSORIES</a>
+                        <a href="#">CLOTHING</a>
+                        <a href="#">AS SEEN ON YOUTUBE</a>
+                        <a href="#">BOOKS</a>
+                        <a href="#">SALE</a>
+                        <a href="#">LAST CHANCE OUTLET</a>
+                        <a href="#">GIFTS AND BIRTHDAY PARTIES</a>
+                        <a href="#">GIFT TRUNK</a>
+                        <a href="#">AG STORES</a>
+                        <a href="#">ACTIVITIES & ADVICE</a>
+                        <a href="#">ABOUT AG</a>
+                        <a href="#">DOLL HOSPITAL</a>
+                        <hr>
+                        <a href="#">DOLL HOSPITAL</a>
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                    <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div class="main-nav" id="AmericanGirl">
+                <div id="imageHolder">
+                    <img class="main-nav" id="logo" src="./assets/NicePng_american-girl-logo-png_3073204.png">
+                </div>
+            </div>
+
+            <div class="main-nav" id="far-right">
+                <i class="fas fa-search"></i>
+
+                <div>
+                <i class="fas fa-user-circle"></i>
+                <span class="hidden-xs">AG REWARDS / SIGN IN</span>
+                </div>
+
+                <i class="fas fa-shopping-bag"></i>
+                
             </div>
         </div>
-
         
         <div class="inner-Wrapper">
             <div class="first Page">
 
+                <!-- Shipping Statement header -->
                 <div class="message">
                     <p id="shippingStatement">Need it for Christmas? Order with expedited shipping by 12/18</p>
                 </div>
             
-
-                <div class="bb-shop-nav-container">
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176_10022020?fmt=png-alpha"> 
+                <!-- Shopping Nav Bar -->
+                <div class="bb-shop-nav-container" id>
+                
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176_10022020?fmt=png-alpha" class="categories"> 
                     <p class="New">
                         <span>New</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176?fmt=png-alpha" class="categories">
                     <p class="Courtney">
                         <span>Courtney</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_dolls_150x176_10022020?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_dolls_150x176_10022020?fmt=png-alpha" class="categories">
                     <p class="Dolls">
                         <span>Dolls</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_accessories_150x176_10022020?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_accessories_150x176_10022020?fmt=png-alpha" class="categories">
                     <p class="Accessories">
                         <span>Accessories</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_clothing_150x176_10022020?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_clothing_150x176_10022020?fmt=png-alpha" class="categories">
                     <p class="Clothing">
                         <span>Clothing</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_trulyme_150x176?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_trulyme_150x176?fmt=png-alpha" class="categories">
                     <p class="TrulyMe">
                         <span>Truly Me</span>
                         <span>&trade;</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_joss_150x176?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_joss_150x176?fmt=png-alpha" class="categories">
                     <p class="Joss">
                         <span>Joss</span>
                         <span>&trade;</span>
                     </p>
 
-                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_cyo_150x176_10022020?fmt=png-alpha">
+                    <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_cyo_150x176_10022020?fmt=png-alpha" class="categories">
                     <p class="CreateYourOwn">
                         <span>Create Your Own</span>
                     </p>
                 </div>
 
-
+                <!-- First Page Background -->
+                <button id="ShopNow">
                 <div class="Starry Timeline">
                     <img id="timeline" src="assets/ag-site-jumbo-hc9-xl.jpg">
+                </button>
 
                 </div>
             
             </div>
 
-          
+          <!-- Second Page -->
 
-            <div class="secondPage">
+            <div class="secondPage" id="petPhoto">
                 <div class="ShadowBox">
                     <div class="AWonderlandFun">
                         <p class="WonderlandFun"></p>
@@ -92,54 +150,28 @@
                         <button class="TrulyMe"></button>
                         <button class="Pets&More"></button>
                     </div>
-                   
                 </div>
-                
             </div>
 
+<!-- Inner Wrapper Closing Tag -->
         </div>   
         
-
+<!-- Website Closing Tag -->
     </div>
 
 </div>
     
+<!-- Script -->
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- <div id="header-wrapper" class="navbar-fixed top>"
-    <header class="main-header navbar navbar-default not-target" style="background-color: rgba(185, 11, 71, 0.9);">
-        <div class="main-nav container bb-show">
-            <button class="aghamburger" data-toggle="collapse" aria-label="Hamburger menu toggle" aria-expanded="false" aria-controls="primary-nav" aria-haspopup="true">
-                
-            </button>
-
-            <div class="inline-nav hide-md-sm">
-
-            <a class="brand-logo" href="https://www.americangirl.com/">
-                <picture>
-                    <source media="(min-width: 481px)" src="/content/dam/ag-dam/ag-global/dam/images/ag logo white 2.png">
-                    
-                    <source media="(max-width: 480px)" srcset="/content/dam/ag-dam/ag-global-dam/images/ag logo white 2.png">
-
-                    <img src="/content/dam/ag-dam//ag-global-dam/images/ag logo white 2.png" alt="American Girl">
-                    
-                </picture>
-            </a>
-
-        </div>
-        
-    </header> -->
-
-        
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+       
     
 </body>
 </html>
