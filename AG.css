@@ -27,7 +27,7 @@ html, body {
 }
 
 
-
+/* Hambgurger Nav */
 .sidenav {
     height: 100%;
     width: 0;
@@ -64,6 +64,15 @@ html, body {
     font-size: 36px;
     margin-left: 50px;
   }
+
+#star {
+    width: 20px;
+    height: 20px;
+}
+
+.social-icons {
+    display: flex;
+}
   
 
  /*Logo Within Element  */
@@ -128,6 +137,7 @@ html, body {
 
 }
  */
+
 
  /* First Page */
 #shopNow {
