@@ -18,17 +18,20 @@
     <div id="website">
 
         <div class="header" id="logoHeader">
-
+            <header class="main-header navbar navbar-default not-target" style="background-color: rgba(185,11,71,.9);">
             <div class="main-nav">
                     <div id="mySidenav" class="sidenav">
                         <div id="home-exit">
-                        <a>
+                        <a class="ham-homelogo" href="https://www.americangirl.com" title="Homepage" data-allowtab="1">
                             <i class="fas fa-home"></i>
                         </a>
-                        <!-- <button class=>
-                            <i class="fas fa-times"></i>
-                        </button> -->
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">  &times;</a>
+
+                         <button class type="button" aria-expanded="true" aria-label="Close Navigation Menu" id="spark-menu-close-button"> 
+                            </i>
+                        
+
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
                         </div>
 
                         <hr>
@@ -60,23 +63,29 @@
                             EMAIL SIGN-UP
                         </a>
 
-                        <div>
-                            <a href="https://www.facebook.com/americangirl/" aria-lable="Facebook" target="_blank" rel="nofollow" class="iconOutline">
+                        <ul class="social-icons">
+                            <li class="ham-facebook">
+                            <a href="https://www.facebook.com/americangirl/" aria-lable="Facebook" target="_blank" rel="nofollow" class="iconOutline"><span>
                             <i class="fab fa-facebook-f"></i>
+                        </span>
                         </a>
-
-                            <a href="https://www.instagram.com/americangirlbrand/" aria-lable="Instagram" target="_blank" rel="nofollow" class="iconOutline">
+                    </li>
+                            <li class="ham-instagram">
+                            <a href="https://www.instagram.com/americangirlbrand/" aria-lable="Instagram" target="_blank" rel="nofollow" class="iconOutline"><span>
                             <i class="fab fa-instagram"></i>
+                        </span>
                         </a>
-                            <a href="https://www.pinterest" aria-lable="Pinterest" target="_blank" rel="nofollow" class="iconOutline">
+                    </li>
+                            <li class="ham-pinterest">
+                            <a href="https://www.pinterest" aria-lable="Pinterest" target="_blank" rel="nofollow" class="iconOutline"><span>
                             <i class="fab fa-pinterest-p"></i>
+                        </span>
                         </a>
+                    </li>
 
-                        </div>
-                        
-                        
-                        
+                    </ul>    
                       </div>
+                      
                     <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
             </div>
 
@@ -87,16 +96,37 @@
             </div>
 
             <div class="main-nav" id="far-right">
-                <i class="fas fa-search"></i>
+                <div class="nav-search hide-md-sm">
+                <div class="search-container">
+                <!-- <button type="button" aria-expanded="false" class="expand-search-bar" data-toggle="searchFormInput" aria-label="Search"> -->
+                    <i class="fas fa-search"></i>
+                <!-- </button> -->
+                
+                <!-- <form>
+                <input action="categoryId" class="categoryId" name="categoryId" type="hidden" autocomplete="off">
+            </form> -->
+      
+                </div>
+                </div>
 
-                <div>
+                <div class="user-info-in-header user off">
+                <div class="not-activated-user">
+                <a href="" class="popupAgRewardSignUp">
+                <span>
                 <i class="fas fa-user-circle"></i>
                 <span class="hidden-xs">AG REWARDS / SIGN IN</span>
+            </span>
+            </a>
+            </div>
+                <div class="activated-user active">     
+                </div>
+
                 </div>
 
                 <i class="fas fa-shopping-bag"></i>
                 
             </div>
+        </header>
         </div>
         
         <div class="inner-Wrapper">
@@ -109,57 +139,69 @@
             
                 <!-- Shopping Nav Bar -->
                 <div class="bb-shop-nav-container" id>
-                
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176_10022020?fmt=png-alpha" class="categories"> 
-                    <p class="New">
+                    <p class="photoSection" id="New">
                         <span>New</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_new_150x176?fmt=png-alpha" class="categories">
-                    <p class="Courtney">
+                    <p class="photoSection" id="Courtney">
                         <span>Courtney</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_dolls_150x176_10022020?fmt=png-alpha" class="categories">
-                    <p class="Dolls">
+                    <p class="photoSection" id="Dolls">
                         <span>Dolls</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_accessories_150x176_10022020?fmt=png-alpha" class="categories">
-                    <p class="Accessories">
+                    <p class="photoSection" id="Accessories">
                         <span>Accessories</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_clothing_150x176_10022020?fmt=png-alpha" class="categories">
-                    <p class="Clothing">
+                    <p class="photoSection" id="Clothing">
                         <span>Clothing</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_trulyme_150x176?fmt=png-alpha" class="categories">
-                    <p class="TrulyMe">
+                    <p class="photoSection" id="TrulyMe">
                         <span>Truly Me</span>
                         <span>&trade;</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_joss_150x176?fmt=png-alpha" class="categories">
-                    <p class="Joss">
+                    <p class="photoSection" id="Joss">
                         <span>Joss</span>
                         <span>&trade;</span>
                     </p>
+                </a>
 
+                    <a class="bb-shop-nav-icon bb-desktop-icon">
                     <img src="https://s7d4.scene7.com/is/image/AmericanGirlBrands/test_sitehome_cyo_150x176_10022020?fmt=png-alpha" class="categories">
-                    <p class="CreateYourOwn">
+                    <p class="photoSection" id="CreateYourOwn">
                         <span>Create Your Own</span>
                     </p>
+                </a>
                 </div>
 
                 <!-- First Page Background -->
-                <button id="ShopNow">
-                <div class="Starry Timeline">
-                    <img id="timeline" src="assets/ag-site-jumbo-hc9-xl.jpg">
-                </button>
-
-                </div>
+                <a id="ShopNow" href="https://www.americangirl.com/shop/c/all-historical-characters?icid=shop%3Ejumbotron%3E12.2-Update%3EShop-Now">
+                    <img class="cmp-image__image" id="timeline" src="assets/ag-site-jumbo-hc9-xl.jpg">
+                </a>
             
             </div>
 

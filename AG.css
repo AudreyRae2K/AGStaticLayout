@@ -3,13 +3,28 @@ html, body {
     padding: 0em;
     border: 0em;
     background-image: url(https://www.freepik.com/free-vector/pattern-with-black-stars-white-background_949778.htm);
+    width: 100%;
+}
 
+img {
+    vertical-align: middle;
 }
 
 /* Navigation Bar */
+/* I added header tags to the header for this web page and have caused the top of the header to not stretch across the top */
+.not-target.main-header {
+    height: 5em;
+    margin-left: -15px;
+    margin-right: 15px;
+    border-radius: 0;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+}
+
+
 #logoHeader {
     background-color: rgba(185,11,71,0.9);
-    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -22,12 +37,30 @@ html, body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100vw;
+    /* width: 100vw; */
+
+
+    max-height: 10%;
+    max-width: 100%;
     
 }
 
 
 /* Hambgurger Nav */
+#spark-menu-close-button {
+    background: 0 0;
+    border: none;
+}
+
+#home-exit {
+    display: flex;
+
+}
+
+.fa-home::before {
+    content: "\f015";
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -59,6 +92,7 @@ html, body {
   
   .sidenav .closebtn {
     position: absolute;
+    display: flex;
     top: 0;
     right: 25px;
     font-size: 36px;
@@ -73,13 +107,60 @@ html, body {
 .social-icons {
     display: flex;
 }
+
+
+
+
+
+li {
+    list-style-type: none;
+}
+
+
+.iconOutline {
+    width: 2em;
+    height: 2em;
+     border-radius: 50%; 
+    border: 1px solid #666;
+        border-top-color: rgb(102, 102, 102);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-right-color: rgb(102, 102, 102);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-bottom-color: rgb(102, 102, 102);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgb(102, 102, 102);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.17143em;
+    
+} 
+
+
   
 
  /*Logo Within Element  */
 #logo {
-    height: 2.5em;
-    padding-top: .75em;
-    padding-bottom: .75em;
+    /* height: 2.5em; */
+    margin-top: .75em;
+    margin-bottom: .75em; 
+    justify-content: center;
+    max-width: 10em;
+    vertical-align: middle;
+
+
+    box-sizing: border-box;
+    
 }
 
 
@@ -112,15 +193,19 @@ html, body {
 
 /* Shopping Navigation */
 .bb-shop-nav-container {
-    display: flex!important;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
-    width: 100%;
+    max-width: 100%;
+
+    min-width: 801px;
+
+    
 }
 
-/* .bb-shop-nav-container {
+ .bb-shop-nav-container {
     position: relative;
     z-index: 3;
     background-color: #fff;
@@ -136,8 +221,34 @@ html, body {
         border-bottom-color: rgb(202, 202, 202);    
 
 }
- */
+ 
+.photoSection {
+    position: relative;
+    color: #333;
+    font-weight: 400;
 
+    margin: 0 auto .35714em;
+    font: 300 1em "Source Sans Pro",sans-serif;
+}
+
+
+.bb-shop-nav-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bb-shop-nav-icon img {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: -25px;
+    margin-left: 20px;
+    max-width: 95px;
+
+    
+}
 
  /* First Page */
 #shopNow {
@@ -146,6 +257,11 @@ html, body {
 
 #timeline {
     width: 100%;
+    height: calc(100vh - 0px);
+    object-fit: cover;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0em;
 
 }
  
