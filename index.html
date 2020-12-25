@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Girl</title>
     <link ref="text/css" rel="stylesheet" href="AG.css">
+
   
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,49 +18,54 @@
 <body>
     <div id="website">
 
-        <div class="header" id="logoHeader">
-            <header class="main-header navbar navbar-default not-target" style="background-color: rgba(185,11,71,.9);">
-            <div class="main-nav">
+
+        <div class="header" id="headerRunner">
+            <div class="main-header" style="background-color:rgba(185,11,71,0.9);">
+            <div class="main-nav" id="hamburger">
                     <div id="mySidenav" class="sidenav">
                         <div id="home-exit">
-                        <a class="ham-homelogo" href="https://www.americangirl.com" title="Homepage" data-allowtab="1">
+                        <a class="ham-homelogo" href="https://audreyrae2k.github.io/AGStaticLayout/" id="homeButton" data-allowtab="1" style="color: black;">
                             <i class="fas fa-home"></i>
                         </a>
 
                          <button class type="button" aria-expanded="true" aria-label="Close Navigation Menu" id="spark-menu-close-button"> 
-                            </i>
+                            
                         
-
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: black;">
+                            <!-- &times; -->
+                            <i class="fas fa-times" ></i>
+                        </a>
+                         </button>
 
                         </div>
 
-                        <hr>
-                        <a href="#">NEW</a>
-                        <a href="#">DOLLS</a>
-                        <a href="#">CREATE YOUR OWN</a>
-                        <a href="#">FURNITURE & ACCESSORIES</a>
-                        <a href="#">CLOTHING</a>
-                        <a href="#">AS SEEN ON YOUTUBE</a>
-                        <a href="#">BOOKS</a>
-                        <a href="#">SALE</a>
-                        <a href="#">LAST CHANCE OUTLET</a>
-                        <a href="#">GIFTS AND BIRTHDAY PARTIES</a>
-                        <a href="#">GIFT TRUNK</a>
-                        <a href="#">AG STORES</a>
-                        <a href="#">ACTIVITIES & ADVICE</a>
-                        <a href="#">ABOUT AG</a>
-                        <a href="#">DOLL HOSPITAL</a>
-                        <hr>
+                        <div id="secondDiv">
+                        <hr class="ham-menu-divider">
+                        <a href="#" class="sideSections">NEW</a>
+                        <a href="#" class="sideSections">DOLLS</a>
+                        <a href="#" class="sideSections">CREATE YOUR OWN</a>
+                        <a href="#" class="sideSections">FURNITURE & ACCESSORIES</a>
+                        <a href="#"class="sideSections">CLOTHING</a>
+                        <a href="#" class="sideSections">AS SEEN ON YOUTUBE</a>
+                        <a href="#" class="sideSections">BOOKS</a>
+                        <a href="#" class="sideSections">SALE</a>
+                        <a href="#" class="sideSections">LAST CHANCE OUTLET</a>
+                        <a href="#" class="sideSections">GIFTS AND BIRTHDAY PARTIES</a>
+                        <a href="#" class="sideSections">GIFT TRUNK</a>
+                        <a href="#" class="sideSections">AG STORES</a>
+                        <a href="#" class="sideSections">ACTIVITIES & ADVICE</a>
+                        <a href="#" class="sideSections">ABOUT AG</a>
+                        <a href="#" class="sideSections">DOLL HOSPITAL</a>
+                        <hr class="ham-menu-divider">
                     
-                        <a href="#">
+                        <a href="#" class="sideSections">
                         <i class="far fa-question-circle"></i>
                         Help
                         </a>
 
-                        <a href="#"><img id="star"src="./assets/output-onlinepngtools (1).png">AG REWARDS / SIGN IN</a>
+                        <a href="#" class="sideSections"><img id="star"src="./assets/output-onlinepngtools (1).png">AG REWARDS / SIGN IN</a>
 
-                        <a href="#"><i class="fas fa-envelope"></i>
+                        <a href="#" class="sideSections"><i class="fas fa-envelope"></i>
                             EMAIL SIGN-UP
                         </a>
 
@@ -83,16 +89,15 @@
                         </a>
                     </li>
 
-                    </ul>    
+                    </ul>
+                          </div>  
                       </div>
                       
                     <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
             </div>
 
             <div class="main-nav" id="AmericanGirl">
-                <div id="imageHolder">
                     <img class="main-nav" id="logo" src="./assets/NicePng_american-girl-logo-png_3073204.png">
-                </div>
             </div>
 
             <div class="main-nav" id="far-right">
@@ -126,7 +131,7 @@
                 <i class="fas fa-shopping-bag"></i>
                 
             </div>
-        </header>
+        </div>
         </div>
         
         <div class="inner-Wrapper">
@@ -203,6 +208,8 @@
                     <img class="cmp-image__image" id="timeline" src="assets/ag-site-jumbo-hc9-xl.jpg">
                 </a>
             
+
+                <!-- first page closing tag -->
             </div>
 
           <!-- Second Page -->
@@ -227,7 +234,6 @@
 <!-- Website Closing Tag -->
     </div>
 
-</div>
     
 <!-- Script -->
 <script>
