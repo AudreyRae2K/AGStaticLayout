@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Girl</title>
     <link ref="text/css" rel="stylesheet" href="AG.css">
-
+    
   
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,15 +20,17 @@
 
 
         <div class="header" id="headerRunner">
-            <div class="main-header" style="background-color:rgba(185,11,71,0.9);">
-            <div class="main-nav" id="hamburger">
+            <div class="main-header">
+            <div class="column" id="hamburger">
+                    <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()" id="aghamburger">&#9776;</span>
+
                     <div id="mySidenav" class="sidenav">
                         <div id="home-exit">
                         <a class="ham-homelogo" href="https://audreyrae2k.github.io/AGStaticLayout/" id="homeButton" data-allowtab="1" style="color: black;">
                             <i class="fas fa-home"></i>
                         </a>
 
-                         <button class type="button" aria-expanded="true" aria-label="Close Navigation Menu" id="spark-menu-close-button"> 
+                         <button class type="button" class="aghamburger" data-toggle="collapse" aria-expanded="true" aria-label="Hamburger menu toggle" controls="primary-nav" id="spark-menu-close-button"> 
                             
                         
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: black;">
@@ -92,15 +94,14 @@
                     </ul>
                           </div>  
                       </div>
-                      
-                    <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+                
             </div>
 
-            <div class="main-nav" id="AmericanGirl">
+            <div class="column" id="AmericanGirl">
                     <img class="main-nav" id="logo" src="./assets/NicePng_american-girl-logo-png_3073204.png">
             </div>
 
-            <div class="main-nav" id="far-right">
+            <div class="column" id="far-right">
                 <div class="nav-search hide-md-sm">
                 <div class="search-container">
                 <!-- <button type="button" aria-expanded="false" class="expand-search-bar" data-toggle="searchFormInput" aria-label="Search"> -->
@@ -114,7 +115,7 @@
                 </div>
                 </div>
 
-                <div class="user-info-in-header user off">
+                <div class="user-info-in-header user-off">
                 <div class="not-activated-user">
                 <a href="" class="popupAgRewardSignUp">
                 <span>
@@ -127,12 +128,13 @@
                 </div>
 
                 </div>
-
+                <a id="shopping-bag">
                 <i class="fas fa-shopping-bag"></i>
+                </a>
                 
             </div>
         </div>
-        </div>
+        
         
         <div class="inner-Wrapper">
             <div class="first Page">
@@ -215,15 +217,15 @@
           <!-- Second Page -->
 
             <div class="secondPage" id="petPhoto">
-                <div class="ShadowBox">
+                <div class="shadowBox">
                     <div class="AWonderlandFun">
-                        <p class="WonderlandFun"></p>
+                        <p class="WonderlandFun"><span id="wonderland">A wonderland<br></span> of fun</p>
                     </div>
 
-                    <p class="ExploreSight"></p>
+                    <p class="ExploreSight">Explore the beautiful sitle of Truly Me&trade; dolls, pets, and play sets</p>
                     <div class="twoColumn">
-                        <button class="TrulyMe"></button>
-                        <button class="Pets&More"></button>
+                        <button class="twoButton"id="TrulyMe">Shop Truly Me</button>
+                        <button class="twoButton" id="Pets&More">Shop pets & more</button>
                     </div>
                 </div>
             </div>
