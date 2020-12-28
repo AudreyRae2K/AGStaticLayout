@@ -5,7 +5,9 @@ html, body {
     /* width: 100%; */
 }
 
-
+a {
+    text-decoration: none;
+}
 
 
 /* Header ---------------------------------------------------------- */
@@ -33,33 +35,42 @@ html, body {
     z-index: 11111;
     border: none;
     box-shadow: none;
+
+    justify-content: space-between;
     display: flex;
+    flex-direction: row;
+     align-items: center;
 
-
-    /* column-count: 3; */
+    
 }
-
-
-
 
 
 
 /*Logo Within Element*/
 #logo {
   
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
+    max-width: 15v;
+    object-fit: scale-down;
+    align-self: center; 
+    /* display: block; */
+    /* text-align: center; */
+    margin-left: 20em;
+
+
     
+  
 }
 
 #AmericanGirl {
     /* the div element holding the photo is  */
-    display: inline-block;
-    height: 100%;
+    
 }
 
 
 /* Far right icons in header */
 #far-right {
+    
     display: flex;
 }
 
@@ -69,11 +80,18 @@ html, body {
     padding-left: 55px;
 }
 
+
+.hidden-xs {
+    color: white;
+
+}
+
 .user-info-in-header {
     padding: 0 0 0 33px;
     margin-left: 0;
     top: 0;
     font-size: 16px;
+    
 }
 
 .fa-user-circle {
@@ -82,6 +100,7 @@ html, body {
     margin-right: 8px;
     width: 24px;
     height: 24px;
+    color: white;
 }
 
 #shopping-bag {
@@ -205,6 +224,9 @@ li {
 
 .social-icons {
     display: flex;
+    margin-top: 34.286px;
+    margin-bottom: 0em;
+    
 }
 
 .iconOutline {
@@ -241,24 +263,40 @@ li {
     display: block;
     transition: 0.3s;
 
-    font: 600 1em "Source Sans Pro",sans-serif;
+    /* font: 600 1em "Source Sans Pro",sans-serif; */
+    margin: 0 6px;
     
-} 
+
+
+}
+
+.fab {
+    padding: 7.5px 0px;
+}
 
 
 
 
 /*Shipping Carousel -------------------------------------------------*/
-#shippingStatement {
+.pencilContainer {
+    padding: 10px 12px 10.85px;
     background-color: rgb(136, 6, 78);
+}
+
+#shippingStatement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
     margin: 0em;
-    height: 3em;
+    height: 2em;
     width: 100vw;
 
     color: white;
     text-align: center;
     width: 100vw;
-    
+    font: 300 .9em "Source Sans Pro",sans-serif;
+       
 }
 
 #home-exit i {
@@ -281,7 +319,7 @@ li {
     max-width: 100%;
     margin: auto;
 
-    min-width: 801px;
+    /* min-width: 801px; */
 
 
     
@@ -300,7 +338,14 @@ li {
     border-bottom: 1px solid #cacaca;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        border-bottom-color: rgb(202, 202, 202);    
+        border-bottom-color: rgb(202, 202, 202); 
+        
+        transition: all .2s ease-in-out;
+        
+}
+
+.bb-shop-nav-icon.bb:hover {
+    width: 300px;
 
 }
  
