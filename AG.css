@@ -28,8 +28,8 @@ a {
 
 .main-header {
     height: 5em;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 0;
     color: #fff;
     z-index: 11111;
@@ -39,7 +39,8 @@ a {
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-     align-items: center;
+    align-items: center;
+    
 
     
 }
@@ -50,28 +51,28 @@ a {
 #logo {
   
     /* box-sizing: border-box; */
-    max-width: 15v;
+    max-width: 15vw;
+    max-height: 100vh;
     object-fit: scale-down;
     align-self: center; 
     /* display: block; */
-    /* text-align: center; */
-    margin-left: 20em;
-
-
+    /* text-align: center; */ 
+    padding-left: 50%;
     
-  
+
 }
 
 #AmericanGirl {
     /* the div element holding the photo is  */
-    
+
+
 }
 
 
 /* Far right icons in header */
 #far-right {
-    
     display: flex;
+    margin-right: 8vw;
 }
 
 .search-container {
@@ -83,7 +84,9 @@ a {
 
 .hidden-xs {
     color: white;
-
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .user-info-in-header {
@@ -101,6 +104,7 @@ a {
     width: 24px;
     height: 24px;
     color: white;
+    font-size: 22px;
 }
 
 #shopping-bag {
@@ -108,9 +112,20 @@ a {
     padding-right: 10px;
     padding-left: 55px;
     text-decoration: none;
+    color: white;
 }
 
+@media only screen and (max-width: 1000px) {
+    .hidden-xs {
+        display: none;
+    }
+}
 
+@media only screen and (max-width: 1000px) {
+    .fa-search {
+        display: none;
+    }
+}
 
 /* Side Navigation--------------------------------------------------*/
 
@@ -141,6 +156,10 @@ a {
 .ham-menu-divider {
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+#hamburger {
+    margin-left: 8vw;
 }
 
 /* First Div that contains the home and close button */
@@ -279,7 +298,8 @@ li {
 
 /*Shipping Carousel -------------------------------------------------*/
 .pencilContainer {
-    padding: 10px 12px 10.85px;
+    
+    
     background-color: rgb(136, 6, 78);
 }
 
@@ -291,11 +311,12 @@ li {
     margin: 0em;
     height: 2em;
     width: 100vw;
-
     color: white;
     text-align: center;
     width: 100vw;
-    font: 300 .9em "Source Sans Pro",sans-serif;
+    font: 500 .9em "Source Sans Pro",sans-serif;
+    
+    padding: 10px 12px 10.85px;
        
 }
 
@@ -311,23 +332,31 @@ li {
 .bb-shop-nav-container {
     display: flex;
   
-    
     justify-content: center;
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
+    overflow: hidden;
 
     /* min-width: 801px; */
-
-
-    
 }
+
+  
+.bb-shop-nav-container {
+    transition: all .2s ease-in-out;
+}
+
+.bb-shop-nav-container a:hover {
+    transform: scale(1.1);
+}
+    
+
 
  .bb-shop-nav-container {
     position: relative;
-    z-index: -1000;
+    z-index: 1;
     background-color: #fff;
 
     border-top: 1px solid #cacaca;
@@ -338,24 +367,18 @@ li {
     border-bottom: 1px solid #cacaca;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        border-bottom-color: rgb(202, 202, 202); 
-        
-        transition: all .2s ease-in-out;
+        border-bottom-color: rgb(202, 202, 202);
+
         
 }
 
-.bb-shop-nav-icon.bb:hover {
-    width: 300px;
-
-}
- 
 .photoSection {
     position: relative;
     color: #333;
     font-weight: 400;
 
     margin: 0 auto .35714em;
-    font: 300 1em "Source Sans Pro",sans-serif;
+    font: 400 1em "Source Sans Pro",sans-serif;
 }
 
 
@@ -374,6 +397,11 @@ li {
     margin-left: 20px;
     max-width: 95px;
   
+}
+
+a.categories {
+    width: 100px;
+    transition: all .2s ease-in-out;
 }
 
 img {
@@ -399,38 +427,71 @@ img {
  #petPhoto {
     background-image: url(./assets/ag-site-jumbo-pets3-xl.jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
+    
+    
+    
  }
 
  .shadowBox {
-     display: inline-block;
      /* margin-right: 25%; */
-     margin-left: 50%;
-     margin-top: 10%;
+     /* margin-left: 70%; */
+     margin-top: 18vw;
+     overflow: hidden;
+     text-align: center;
+     float: right;
+     padding-right: 10em;
+    
+
+
+     
+         
  }
 
  .WonderlandFun {
-     color: white;
+     color: rgba(255, 255, 255);
      font-size: 50px;
      text-align: center;
      margin: 0;
  }
 
- .ExploreSight {
-     color: white;
+ #wonderland {
+    font-family: "Source Sans Pro",sans-serif;
+    font-weight: 600px;
+    
  }
 
+ .ExploreSight {
+     color: white;
+     font-size: 15px;
+     font-family: "Source Sans Pro",sans-serif;
+ }
+
+ .twoColumn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* width: 80%; */
+ }
  .twoButton {
      outline: none;
      text-align: center;
      border: white;
+     background-color: rgba(255, 255, 255, 0.747);
      border-radius: 10px;
      padding: relative;
-     margin: auto;
+     /* margin: auto; */
      width: 150px;
      height:40px;
-    font-weight: 55000;
- }
+     margin: 1em;
 
+      
+ }
+ 
+ 
+
+
+ 
  
